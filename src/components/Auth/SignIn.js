@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client';
 
 import { useState } from 'react';
@@ -45,7 +46,7 @@ const SignIn = () => {
               className={cn('input', errors.email && touched.email && 'bg-red-50')}
               id="email"
               name="email"
-              placeholder="jane@acme.com"
+              placeholder="youremailhere@email.com"
               type="email"
             />
             {errors.email && touched.email ? (
@@ -57,6 +58,7 @@ const SignIn = () => {
               className={cn('input', errors.password && touched.password && 'bg-red-50')}
               id="password"
               name="password"
+              placeholder="Password"
               type="password"
             />
             {errors.password && touched.password ? (
@@ -68,7 +70,7 @@ const SignIn = () => {
             </Link>
 
             <button className="button-inverse w-full" type="submit">
-              Submit
+              Login
             </button>
           </Form>
         )}
